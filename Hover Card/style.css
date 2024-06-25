@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.8s ease-in;
+  cursor: pointer;
+}
+
+.box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000053;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 25px;
+  text-align: center;
+  transform: translateX(-100%);
+  transition: transform 0.8s ease-in;
+}
+
+.box:hover .content {
+  transform: translateX(0);
+}
+
+.content h1 {
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.content p {
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.content a {
+  text-decoration: none;
+  margin-top: 20px;
+  background: #fff;
+  padding: 10px 25px;
+  border-radius: 3px;
+  font-weight: 600;
+  color: #000;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Box 2 */
+
+.box2 {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.8s ease-in;
+  cursor: pointer;
+}
+
+.box2 img {
+  width: 100%;
+  height: 100%;
+}
+.box2 .content2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000053;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 25px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.8s ease-in;
+}
+
+.box2:hover .content2 {
+  transform: translateY(0);
+}
+.content2 h1 {
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.content2 p {
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.content2 a {
+  text-decoration: none;
+  margin-top: 20px;
+  background: #fff;
+  padding: 10px 25px;
+  border-radius: 3px;
+  font-weight: 600;
+  color: #000;
+}
