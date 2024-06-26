@@ -1,0 +1,748 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  scroll-behavior: smooth;
+}
+/* Default styling */
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* Default styling */
+
+/* Navbar CSS */
+header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: sticky;
+}
+nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  position: relative;
+  height: 100%;
+}
+.logo a {
+  top: 20%;
+  font-size: 32px;
+  left: 10%;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-right: 80px;
+}
+header ul li a {
+  font-weight: 600;
+  color: #000;
+}
+.treks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.search {
+  cursor: pointer;
+}
+/* Navbar CSS */
+
+/* Slider hero page */
+.slider {
+  width: 100%;
+  height: 100dvh;
+}
+.mySwiper {
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+}
+.mySwiper .slide {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+}
+.mySwiper .slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  z-index: -1;
+}
+.mySwiper .slide h2 {
+  font-size: 65px;
+  color: #fff;
+  font-weight: 700;
+}
+.mySwiper .slide h4 {
+  margin: 30px 0;
+  width: 967px;
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+.mySwiper .slide p {
+  margin: 30px 0;
+  color: #fff;
+  width: 600px;
+}
+.mySwiper .slide .button {
+  margin: 50px 0;
+}
+.mySwiper .slide .btn1 {
+  padding: 15px 35px;
+  background: #fff;
+  border-radius: 25px;
+  color: #000;
+  font-weight: 500;
+}
+.mySwiper .slide .btn1:hover {
+  background: transparent;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.mySwiper .slide .btn2 {
+  padding: 15px 37px;
+  background: transparent;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  color: #fff;
+  margin: 0px 30px;
+  transition: 0.3s ease-in;
+}
+.mySwiper .slide .btn2:hover {
+  background: #fff;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  color: #000;
+}
+.mySwiper .slide .content {
+  padding: 155px 55px;
+}
+/* Slider slider page */
+
+/* * Card */
+.card {
+  position: relative;
+  margin: 60px 0px;
+  padding: 0px 40px;
+}
+.card h1 {
+  position: relative;
+  font-weight: 700;
+}
+.card h1:before {
+  content: "";
+  width: 170px;
+  height: 4px;
+  border-radius: 25px;
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  background: #008080;
+}
+.card-warpper {
+  margin-top: 70px;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mySwiper-card {
+  width: 100%;
+  height: auto;
+  padding: 20px 30px;
+  overflow: hidden;
+}
+.mySwiper-card .card-slide {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 25px;
+}
+.card-content {
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+  display: flex;
+  align-items: normal;
+  justify-content: start;
+  flex-direction: column;
+}
+.card-content .img {
+  width: 308px !important;
+  height: 207px !important;
+}
+.card-content .img img {
+  border-radius: 25px;
+  width: 100% !important;
+  height: 100% !important;
+}
+.card-data {
+  padding: 0 5px;
+  margin-top: 10px;
+}
+.card-data .rateing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-data .rateing span {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #008080;
+  gap: 5px;
+}
+.card-detail {
+  margin-top: 20px;
+  padding-left: 5px;
+  display: flex;
+  align-items: normal;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.dec {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  /* margin-bottom: 5px; */
+  font-weight: 600;
+}
+.dec i {
+  color: #008080;
+}
+.card-btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 5px;
+  justify-content: normal;
+  margin-top: 30px;
+}
+.card-btn .btn1 {
+  padding: 15px 15px;
+  border-radius: 10px;
+  border: 3px solid #008080;
+}
+.card-btn .btn1 i {
+  color: #008080;
+}
+.card-btn .btn2 {
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  padding: 15px 0;
+  background: #008080;
+}
+/* * Card end */
+
+/* * testmonial */
+.testmonial {
+  position: relative;
+  margin-top: 40px;
+  width: 100%;
+  height: 356px;
+}
+.testmonial img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.testmonial-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+.testmonial-content div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #008080;
+}
+.testmonial-content div i {
+  font-size: 50px;
+  color: #fff;
+}
+.testmonial-content div p {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 15px;
+  color: #fff;
+}
+/* * testmonial */
+
+/* * about us */
+.about {
+  margin-top: 70px;
+  width: 100%;
+}
+.about h1 {
+  position: relative;
+  font-weight: 700;
+  padding: 0px 40px;
+}
+.about h1:before {
+  content: "";
+  width: 40px;
+  height: 4px;
+  border-radius: 25px;
+  position: absolute;
+  bottom: -10px;
+  left: 40px;
+  background: #008080;
+}
+.about-content {
+  margin-top: 70px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 30px;
+}
+.inner-content {
+  padding: 0px 40px;
+}
+
+.inner-content .name {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 22px;
+}
+.inner-content .name span {
+  font-weight: 700;
+  font-size: 22px;
+}
+.inner-content .desc1 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 22px;
+}
+.inner-content .desc2 {
+  width: 800px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  color: #222;
+}
+.about-img {
+  width: 600px;
+  height: 700px;
+  background-position: center;
+  padding: 20px 10px;
+  border-radius: 25px;
+}
+.about-img img {
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+}
+/* * about us */
+
+/* WAY US PAGE */
+
+.way-us {
+  margin-top: 70px;
+}
+.way-us .titel {
+  position: relative;
+  text-align: center;
+  margin-bottom: 140px;
+  font-weight: 700;
+  font-size: 28px;
+}
+.way-us .titel:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  border-radius: 25px;
+  height: 4px;
+  width: 300px;
+  background: #008080;
+}
+.timeline {
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 52%;
+  width: 4px;
+  height: 100%;
+  background: #008080;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  width: 45%;
+  padding: 20px;
+  margin: 20px 0;
+  background: #fff;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item.left {
+  left: 0;
+  margin-left: 2%;
+}
+
+.timeline-item.right {
+  left: 50%;
+  margin-left: 5%;
+}
+
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #008080;
+  border: 4px solid #f4f4f4;
+}
+
+.timeline-item.left:before {
+  top: 40%;
+  left: 101%;
+}
+
+.timeline-item.right:before {
+  left: -20px;
+}
+
+.timeline-item h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #008080;
+}
+
+.timeline-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.timeline-item span {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+}
+/* WAY US PAGE */
+
+/* Review start */
+.review {
+  width: 100%;
+  margin-top: 70px;
+}
+.review h1 {
+  position: relative;
+  font-weight: 700;
+  margin-left: 30px;
+}
+.review h1:before {
+  content: "";
+  width: 170px;
+  height: 4px;
+  border-radius: 25px;
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  background: #008080;
+}
+.review-slider {
+  margin-top: 70px;
+  width: 100%;
+  background: fff;
+  height: 300px;
+  padding: 0px 20px;
+}
+.slider-warpper {
+  width: 100%;
+  background: #fff;
+  height: 100%;
+  overflow: hidden;
+}
+.mySwiper-review {
+  width: 100%;
+  height: 100%;
+}
+.mySwiper-review .review-slide {
+  background: #fff;
+  width: 120%;
+}
+.review-slide {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  padding: 15px 25px;
+}
+.review-slider .head {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+.review-slider .head .image {
+  width: 70px;
+  height: 70px;
+  background-attachment: center;
+}
+.review-slider .head .image img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 50%;
+  height: 100%;
+}
+.review-slider .head .head-content p {
+  font-weight: 600;
+}
+.review-slider .head .head-content span {
+  color: #ccc;
+  font-size: 12px;
+}
+.review-slide .body {
+  display: flex;
+  margin-top: 50px;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+.review-slide .body .rateing {
+  margin-bottom: 20px;
+}
+.review-slide .body .rateing i {
+  color: #f4cd00;
+}
+.review-slide .body .rateing .star {
+  color: #ccc;
+}
+.review-slide .body .desc {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+/* Review end */
+
+footer {
+  margin-top: 140px;
+  background-color: #006e6d;
+  color: white;
+  padding: 70px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 150px;
+}
+
+.footer-container div {
+  flex: 1;
+  padding: 0 15px;
+}
+
+h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+p,
+li {
+  margin: 15px 0;
+  font-size: 17px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.fa {
+  margin-right: 10px;
+}
+
+.contact-us p,
+.follow-us p {
+  display: flex;
+  align-items: center;
+}
+
+.follow-us p {
+  justify-content: center;
+  font-size: 17px;
+}
+
+.follow-us p i {
+  justify-content: center;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.follow-us {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+.line {
+  width: 100%;
+  height: 3px;
+  background: #ccc;
+  margin-top: 15px;
+}
+.copyright {
+  padding: 0px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+/* footer  */
+
+/*  * Menu icon */
+.menu {
+  display: none;
+  margin: 30px;
+}
+.sec {
+  margin-right: 20px;
+}
+/*  * Menu icon */
+
+/* Media queries for tablets */
+@media screen and (min-width: 630px) and (max-width: 1170px) {
+  header ul {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+
+  .logo a {
+    top: 30%;
+    font-size: 24px;
+  }
+  .mySwiper .slide img {
+    width: full;
+    height: 600px;
+    background-position: center !important;
+  }
+  .mySwiper .slide h2 {
+    font-size: 45px;
+  }
+  .mySwiper .slide h4 {
+    font-size: 30px;
+    width: auto;
+  }
+  .mySwiper .slide p {
+    font-size: 18px;
+    width: auto;
+  }
+  .mySwiper .slide .content {
+    padding: 150px 30px;
+  }
+}
+
+/* Media queries for mobile */
+@media screen and (min-width: 320px) and (max-width: 630px) {
+  header ul {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  header {
+    background: #008080;
+  }
+  .logo {
+    width: 60%;
+  }
+  .logo a {
+    top: 35%;
+    font-size: 22px;
+    color: #fff;
+  }
+  .logo img {
+    display: none;
+  }
+  .mySwiper .slide img {
+    width: auto;
+    height: 100dvh;
+    background-position: center !important;
+  }
+  .mySwiper .slide h2 {
+    font-size: 30px;
+  }
+  .mySwiper .slide h4 {
+    font-size: 23px;
+    width: auto;
+  }
+  .mySwiper .slide p {
+    font-size: 14px;
+    width: auto;
+  }
+  .mySwiper .slide .button .btn1 {
+    padding: 15px 25px;
+  }
+  .mySwiper .slide .button .btn2 {
+    padding: 15px 25px;
+    margin-left: 5px;
+  }
+  .mySwiper .slide .content {
+    padding: 90px 25px;
+  }
+}
