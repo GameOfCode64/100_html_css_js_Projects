@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  padding: 65px 70px;
+  height: 100vh;
+  position: relative;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+.content section {
+  padding: 25px 45px;
+  background: #f5f7f7;
+  box-shadow: 5px 15px 25px rgba(255, 255, 255, 0.7);
+}
+.content section h1 {
+  margin-bottom: 35px;
+}
+.indicator {
+  position: fixed;
+  height: 10px;
+  width: calc(100% - 6em);
+  top: 10px;
+  left: 3em;
+  border-radius: 3px;
+}
+.indicator .progress {
+  height: 100%;
+  width: 70px;
+  border-radius: 3px;
+  background: linear-gradient(30deg, cyan, blueviolet);
+  transition: width 0.1s;
+}
