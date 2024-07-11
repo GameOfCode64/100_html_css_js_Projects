@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #1f143a;
+}
+
+p{
+    font-size: 45px;
+    color: #fff;
+    font-weight: 900;
+    background: linear-gradient(to right, blue 0%,  cyan 100%);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.curser{
+    width: 20px;
+    background: cyan;
+    margin-left: 5px;
+}
