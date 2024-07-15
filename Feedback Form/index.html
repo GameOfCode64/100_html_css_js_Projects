@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <style>
+      body {
+        background: black;
+        height: 100dvh;
+        color: #fff;
+      }
+      .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+      }
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px 60px;
+      }
+      .unhappy {
+        text-align: center;
+        cursor: pointer;
+        padding: 0px 40px;
+      }
+      p {
+        font-size: 50px;
+        cursor: pointer;
+      }
+      .neutral {
+        text-align: center;
+        cursor: pointer;
+        padding: 0px 40px;
+      }
+      .happy {
+        text-align: center;
+        cursor: pointer;
+        padding: 0px 40px;
+      }
+      .active {
+        background: #ccc;
+        padding: 0px 40px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <h1>Your Feedback ☠️</h1>
+      <div class="content">
+        <div class="unhappy">
+          <p>😒</p>
+          <h4>Unhappy</h4>
+        </div>
+        <div class="neutral">
+          <p>😑</p>
+          <h4>Neutral</h4>
+        </div>
+        <div class="happy">
+          <p>😍</p>
+          <h4>happy</h4>
+        </div>
+      </div>
+      <h3>NO Feedback Yet!</h3>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
