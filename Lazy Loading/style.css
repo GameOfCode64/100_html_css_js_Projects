@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100dvh;
+  overflow: hidden;
+  margin: 0;
+}
+.background {
+  background: url(https://cdn.pixabay.com/photo/2024/06/30/13/41/iguana-8863156_1280.jpg)
+    no-repeat center;
+  background-size: cover;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  filter: blur(0);
+}
+
+.loading {
+  font-size: 30px;
+}
